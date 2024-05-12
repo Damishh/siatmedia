@@ -1,0 +1,472 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container-menu {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; 
+}
+.hamburger {
+    display: none; /* Oculta el icono de hamburguesa por defecto */
+    cursor: pointer;
+}
+.toggle-menu {
+    display: none; /* Oculta el cuadradito del checkbox */
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    margin-left: 20px; 
+    text-decoration: none;
+    color: rgb(110, 108, 108); 
+}
+.link:hover {
+    color: #ff0000; 
+}
+.iniciar {
+    padding: 10px 20px; 
+    background-color: #F57D22; 
+    color: white; 
+    border-radius: 5px; 
+    margin-left: 30px; 
+}
+.registro{
+    padding: 10px 20px; 
+    background-color: #3479FF; 
+    color: white; 
+    border-radius: 5px; 
+    margin-left: 30px; 
+}
+.link{
+    margin-top: 10px;
+}
+.container-portada {
+    position: relative;
+}
+.container-portada img {
+    width: 100%;
+    height: 700px; 
+    z-index: 0; 
+    filter: brightness(60%); 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(20, 20, 20, 0.5); 
+    z-index: 1; 
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2; 
+}
+
+.texto h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.texto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.boton-contacto {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3479FF; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton-contacto:hover {
+    background-color: #3479FF;
+}
+
+.boton-servicios {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 20px;
+    color: white; 
+    text-decoration: none;
+    border: 2px solid white; 
+    border-radius: 5px;
+}
+
+.boton-servicios:hover {
+    background-color: #3479FF;
+    color: white;
+}
+
+.container-portada img {
+    width: 100%;
+    z-index: 0; 
+    filter: brightness(60%); 
+}
+.siatmedia{
+    color: #F57D22;
+}
+.online{
+    color: #F57D22;
+}
+.container-Bienvenidos{
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.imagen img{
+    width: 30rem;
+}
+.contenido{
+    margin-top: 5rem;
+}
+.contenido h2{
+    color: #F57D22;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contenido p{
+    color: rgb(82, 81, 81);
+    margin-bottom: 1rem;
+}
+.contenido a{
+    background-color: #3479FF;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+.container-web{
+    background: linear-gradient(#FFB379, #F57D22);
+}
+.container-web{
+    padding: 2rem;
+}
+.container-web h2{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+.container-web p{
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.webcard {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 16rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 16rem;
+    height: 13rem;
+  }
+  
+  .card h3 {
+    margin: 10px;
+    color: rgb(66, 65, 65);
+    text-align: center;
+  }
+
+  .container-servicios{
+    padding: 3rem;
+  }
+  .container-servicios h2{
+    color: #F57D22;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .ser1{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .ser1 h3{
+    color:  rgb(66, 65, 65);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .ser1 img{
+    width: 9rem;
+  }
+  .ser2{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .ser2 h3{
+    color:  rgb(66, 65, 65);
+    text-align: center;
+  }
+  .ser2 img{
+    width: 9rem;
+  }
+.container-atencion{
+    background: linear-gradient(#FFB379, #F57D22);
+    padding: 3rem;
+}
+.container-atencion h2{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.atencion{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.container-noticias{
+    background-color: #EEF1F5;
+    padding: 3rem;
+}
+.container-noticias h2{
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-size: 2rem;
+}
+.container-noticias h4{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.noticias{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.contacto{
+    background-color: #1C1F29;
+    justify-content: center;
+    display: flex;
+    padding: 2rem;
+    gap: 4rem;
+}
+.formulario{
+    width: 20rem;
+    background-color: white;
+    padding: 1rem 2.1rem;
+    border-radius: 1rem;
+}
+form h2, h3{
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+form h2{
+    margin-bottom: 1rem;
+}
+form h3{
+    margin-bottom: 2rem;
+}
+form input{
+    justify-content: center;
+    width: 95%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(179, 175, 175);
+    border-radius: 5px;
+}
+input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(#FFB379, #F57D22);
+    color: white; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+input[type="submit"]:hover {
+    background-color: #d4620b;
+}
+input[type="mensaje"]{
+    height: 4rem;
+}
+.video{
+    margin-top: 3rem;
+}
+.icon{
+ background-color: #1C1F29;
+ padding: 1rem;
+ text-align: center;
+}
+.icon img{
+    width: 1.8rem;
+    height: 1.9rem;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+.icon h4{
+    color: white;
+    font-size: 1.0rem;
+}
+
+@media only screen and (max-width: 768px){
+    .container-Bienvenidos {
+        padding: 3rem 2rem; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 3rem; 
+    }
+    
+    .imagen img {
+        width: 100%; 
+        max-width: 30rem; 
+    }
+    
+    .contenido {
+        margin-top: 3rem; 
+        text-align: center; 
+    }
+    
+    .contenido h2 {
+        color: #F57D22;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contenido p {
+        color: rgb(82, 81, 81);
+        margin-bottom: 1rem;
+    }
+    
+    .contenido a {
+        background-color: #3479FF;
+        color: white;
+        padding: 0.7rem;
+        border-radius: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .container-web{
+        padding: 1rem;
+    }
+    .webcard {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card {
+        width: 100%; 
+    }
+
+    .card {
+        width: calc(33.33% - 1rem); 
+    }
+    .card img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+/* Media query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    .ser1, .ser2 {
+        align-items: center;
+        flex-direction: column; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-atencion {
+        padding: 2rem; 
+    }
+
+    .atencion {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-noticias {
+        padding: 2rem; 
+    }
+
+    .noticias {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .formulario {
+        max-width: 100%; 
+    }
+    .contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon img {
+        margin-right: 0; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333; /* Cambia el color de fondo según tu diseño */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .toggle-menu:checked + .nav {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        font-size: 24px;
+    }
+
+    .link {
+        margin: 10px 0;
+    }
+}
